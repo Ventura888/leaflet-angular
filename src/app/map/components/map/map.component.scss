@@ -1,14 +1,29 @@
 .container-app {
-  height: 100vh;
   padding: 0;
+}
+
+.top-bar {
+  height: 75px;
+  width: 100%;
+  line-height: 75px;
+  font-size: 25px;
+  padding: 0;
+  border-bottom: 1px solid rgb(54, 54, 54);
+  background-color: rgb(34, 34, 34);
+  color: rgb(170, 170, 170);
+  position: fixed;
+  z-index: 9999;
+  //box-shadow: rgba(0, 0, 0, 0.51) 30px 0px 90px;
 }
 
 .side-nav {
   background-color: rgb(34, 34, 34);
-  height: 100vh;
+  margin-top: 75px;
   z-index: 999;
+  position: fixed;
+  height: 100%;
   padding: 0;
-  box-shadow: rgba(0, 0, 0, 0.51) 30px 0px 90px;
+  //box-shadow: rgba(0, 0, 0, 0.51) 30px 0px 90px;
   border-left: 1px solid rgb(54, 54, 54);
   border-right: 1px solid rgb(54, 54, 54);
   color: rgb(170, 170, 170);
@@ -42,27 +57,41 @@
 
 .map-graph-wrapper {
   padding: 10px;
+  padding-top: 85px;
+  padding-left: 210px;
+  width: 100%;
+  min-height: 100vh;
   background-color: #181818;
   #map {
-    width: 100%; height: 50vh;
+    width: 100%;
+    height: 500px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    border: 1px solid rgb(54, 54, 54);
   }
   .bottom-section {
     display: flex;
+    padding-top: 10px;
+
     .graph {
-      height: calc(50vh - 20px);
-      width: 50%;
+      height: calc(50% - 20px);
+      width: 30%;
       padding-top: 10px;
       overflow: hidden;
       position: relative;
       margin-right: 10px;
+      background-color: #d56217;
+      border: 1px solid rgb(54, 54, 54);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     }
     .data-table {
-      height: calc(50vh - 20px);
-      width: 50%;
+      height: calc(50% - 20px);
+      width: 70%;
       padding-top: 10px;
       overflow: hidden;
       position: relative;
+      background-color: #d52922;
+      border: 1px solid rgb(54, 54, 54);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     }
   }
 

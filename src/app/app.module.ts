@@ -29,16 +29,16 @@ import { GetAllCapitalsDataReq } from './map/store/map.actions';
     EffectsModule.forRoot([]),
   ],
   providers: [
-    {
-      provide: APP_INITIALIZER,
-      useFactory: (store: Store<any>) => {
-        return () => {
-          store.dispatch(new GetAllCapitalsDataReq());
-        };
-      },
-      multi: true,
-      deps: [Store]
-    }
+    // {
+    //   provide: APP_INITIALIZER,
+    //   useFactory: (store: Store<any>) => {
+    //     return () => {
+    //       store.dispatch(new GetAllCapitalsDataReq());
+    //     };
+    //   },
+    //   multi: true,
+    //   deps: [Store]
+    // }
   ],
   bootstrap: [AppComponent]
 })

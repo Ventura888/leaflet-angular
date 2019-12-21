@@ -1,11 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~leaflet/dist/leaflet.css";
-body {
-  margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
-  padding: 0;
-  overflow: hidden;
-}
 
 @import '~@angular/material/theming';
 // Plus imports for other components in your app.
@@ -18,7 +12,7 @@ body {
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$candy-app-primary: mat-palette($mat-indigo);
+$candy-app-primary: mat-palette($mat-deep-orange);
 $candy-app-accent:  mat-palette($mat-pink, A200, A100, A400);
 
 // The warn palette is optional (defaults to red).
@@ -34,3 +28,36 @@ $candy-app-theme: mat-dark-theme($candy-app-primary, $candy-app-accent, $candy-a
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+$mat-deep-orange: (
+  50 : #fcf2e7,
+  100 : #f8dec3,
+  200 : #f3c89c,
+  300 : #eeb274,
+  400 : #eaa256,
+  500 : #e69138,
+  600 : #e38932,
+  700 : #df7e2b,
+  800 : #db7424,
+  900 : #d56217,
+  A100 : #ffffff,
+  A200 : #ffe3d4,
+  A400 : #ffc3a1,
+  A700 : #ffb287,
+  contrast: (
+    50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #000000,
+    400 : #000000,
+    500 : #000000,
+    600 : #000000,
+    700 : #000000,
+    800 : #000000,
+    900 : #ffffff,
+    A100 : #000000,
+    A200 : #000000,
+    A400 : #000000,
+    A700 : #000000,
+  )
+);

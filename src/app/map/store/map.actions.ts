@@ -4,7 +4,7 @@ export enum MapActionTypes {
   GET_All_CAPITALS_DATA_REQ = 'GET_All_CAPITALS_DATA_REQ',
   GET_All_CAPITALS_DATA_RES = 'GET_All_CAPITALS_DATA_RES',
   SET_SELECTED_CITY = 'SET_SELECTED_CITY',
-  SELECT_MAP_TYPE = 'SELECT_MAP_TYPE',
+  SELECT_MAP_TYPE = 'SELECT_MAP_TYPE'
 }
 
 export type MapActions =
@@ -52,5 +52,3 @@ export class SelectMapType implements Action {
 
   constructor(public payload: SelectMapTypePayload) {}
 }
-
-
