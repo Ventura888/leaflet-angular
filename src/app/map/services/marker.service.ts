@@ -44,4 +44,10 @@ export class MarkerService {
       }
     });
   }
+
+  flyTo(map: L.map, lon, lat) {
+    map.flyTo([lon, lat], 9, {
+      duration: 0.5
+    });
+  }
 }
