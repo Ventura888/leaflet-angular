@@ -33,10 +33,6 @@ export class MarkerService {
         });
 
         circle.on('click', (e) => {
-          console.log(c.properties);
-          map.flyTo([lon, lat], 9, {
-            duration: 0.5
-          });
           circle.bindPopup(this.popupService.makeCapitalPopup(c));
         });
 
@@ -47,7 +43,7 @@ export class MarkerService {
 
   flyTo(map: L.map, lon, lat) {
     map.flyTo([lon, lat], 9, {
-      duration: 0.5
+      duration: 1.5
     });
   }
 }

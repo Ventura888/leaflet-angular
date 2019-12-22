@@ -23,13 +23,5 @@ export class MapEffects {
     }),
   );
 
-
-  // @Effect({dispatch: false})
-  // onFlyTo = this.actions$.pipe(
-  //   ofType(MapActionTypes.FLY_TO_LOCATION),
-  //   tap(() => {
-  //     return this.markerService.flyToLocation()
-  //   }),
-  // );
 }
 
