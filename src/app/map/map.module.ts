@@ -9,20 +9,24 @@ import { mapReducer } from './store/map.reducer';
 import { EffectsModule } from '@ngrx/effects';
 import { MapEffects } from './store/map.effects';
 import { SideNavComponent } from './components/side-nav/side-nav.component';
-import { MatSidenavModule } from '@angular/material';
+import { MatButtonModule, MatIconModule, MatSidenavModule, MatTooltipModule } from '@angular/material';
 import { AgGridModule } from 'ag-grid-angular';
+import { ButtonRendererComponent } from './components/data-table/button-renderer/button-renderer.component';
 
 
 
 @NgModule({
-  declarations: [MapComponent, GraphComponent, DataTableComponent, SideNavComponent],
+  declarations: [MapComponent, GraphComponent, DataTableComponent, SideNavComponent, ButtonRendererComponent],
   imports: [
     CommonModule,
     HttpClientModule,
     StoreModule.forFeature('map', mapReducer),
     EffectsModule.forFeature([MapEffects]),
     MatSidenavModule,
-    AgGridModule.withComponents([])
+    AgGridModule.withComponents([ButtonRendererComponent]),
+    MatButtonModule,
+    MatIconModule,
+    MatTooltipModule
   ],
   exports: [MapComponent]
 })

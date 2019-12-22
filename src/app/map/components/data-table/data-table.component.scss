@@ -15,3 +15,16 @@
   background-color: #b9b9b9;
   border-radius: 10px;
 }
+
+::ng-deep.ag-row {
+  padding-top: 15px;
+}
+
+::ng-deep.ag-cell-focus,.ag-cell-no-focus{
+  border-color:transparent !important;
+}
+/* This CSS is to not apply the border for the column having 'no-border' class */
+::ng-deep.no-border.ag-cell:focus{
+  border-color:transparent !important;
+  outline: none;
+}
