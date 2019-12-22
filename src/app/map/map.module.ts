@@ -10,6 +10,7 @@ import { EffectsModule } from '@ngrx/effects';
 import { MapEffects } from './store/map.effects';
 import { SideNavComponent } from './components/side-nav/side-nav.component';
 import { MatSidenavModule } from '@angular/material';
+import { AgGridModule } from 'ag-grid-angular';
 
 
 
@@ -20,7 +21,8 @@ import { MatSidenavModule } from '@angular/material';
     HttpClientModule,
     StoreModule.forFeature('map', mapReducer),
     EffectsModule.forFeature([MapEffects]),
-    MatSidenavModule
+    MatSidenavModule,
+    AgGridModule.withComponents([])
   ],
   exports: [MapComponent]
 })
