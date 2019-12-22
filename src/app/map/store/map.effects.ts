@@ -2,17 +2,15 @@ import { Injectable } from '@angular/core';
 import { Actions, Effect, ofType } from '@ngrx/effects';
 import { Store } from '@ngrx/store';
 import { HttpClient } from '@angular/common/http';
-import { map, switchMap, tap } from 'rxjs/operators';
+import { map, switchMap } from 'rxjs/operators';
 import { GetAllCapitalsDataRes, MapActionTypes } from './map.actions';
-import * as L from 'leaflet';
 import { MarkerService } from '../services/marker.service';
-import { Observable } from 'rxjs';
 
 
 @Injectable()
 export class MapEffects {
 
-  constructor(private actions$: Actions, private store: Store<any>, private http: HttpClient, private markerService: MarkerService,) {
+  constructor(private actions$: Actions, private store: Store<any>, private http: HttpClient, private markerService: MarkerService) {
   }
 
   @Effect()
