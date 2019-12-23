@@ -4,6 +4,7 @@ import { allCapitalsSelector } from '../../store/map.selectors';
 import { filter, map, tap } from 'rxjs/operators';
 import { MarkerService } from '../../services/marker.service';
 import { ButtonRendererComponent } from './button-renderer/button-renderer.component';
+import { CsvService } from '../../services/csv.service';
 
 
 @Component({
@@ -26,7 +27,7 @@ export class DataTableComponent implements OnInit, OnDestroy {
     tap(capitals => this.capitals = capitals.features)
   );
 
-  constructor(private store: Store<any>, private markerService: MarkerService) {
+  constructor(private store: Store<any>, private markerService: MarkerService, private csvService: CsvService) {
     this.frameworkComponents = {
       buttonRenderer: ButtonRendererComponent
     };
@@ -63,4 +64,9 @@ export class DataTableComponent implements OnInit, OnDestroy {
   flyTo(e) {
     this.markerService.flyTo(this.map, e.rowData.geometry.coordinates[1], e.rowData.geometry.coordinates[0]);
   }
+
+  exportToCsv() {
+    this.csvService.exportToCsv(this.capitals)
+  }
+
 }

@@ -1,11 +1,24 @@
-<ag-grid-angular
-  style="width: 100%; height: 300px;"
-  class="ag-theme-balham-dark"
-  [rowData]="capitals"
-  [columnDefs]="columnDefs"
-  rowHeight="60"
-  headerHeight="50"
-  animateRows=true
-  [frameworkComponents]="frameworkComponents"
->
-</ag-grid-angular>
+
+<div style="position: relative">
+  <button style="position: absolute; top: 5px; right: 0; z-index: 9999" mat-icon-button [matMenuTriggerFor]="menu" aria-label="Options" matTooltipPosition="above" matTooltip="Options">
+    <mat-icon style="color: white;">more_vert</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item (click)="exportToCsv()">
+      <mat-icon>save_alt</mat-icon>
+      <span>Export to CSV</span>
+    </button>
+  </mat-menu>
+  <ag-grid-angular
+    style="width: 100%; height: 300px;"
+    class="ag-theme-balham-dark"
+    [rowData]="capitals"
+    [columnDefs]="columnDefs"
+    rowHeight="60"
+    headerHeight="50"
+    animateRows=true
+    [frameworkComponents]="frameworkComponents"
+  >
+  </ag-grid-angular>
+
+</div>
