@@ -1,3 +1,9 @@
-<div style="width: 100%; height: 400px;">
-  dfgdfgdfg
+<div style="width: 100%; height: 410px; text-align: center; color: #aaaaaa; user-select: none;">
+  <div class="charts-header">
+    <mat-icon [style.color]="selectedChartType === chartTypes.MOST_POPULATED ? '#185e8f': ''" (click)="setChartType(chartTypes.MOST_POPULATED)" matTooltip="Most Populated" matTooltipPosition="above">insert_chart</mat-icon>
+    <mat-icon [style.color]="selectedChartType === chartTypes.BIGGEST_AREA ? '#185e8f': ''" (click)="setChartType(chartTypes.BIGGEST_AREA)" matTooltip="Biggest Area" matTooltipPosition="above">pie_chart</mat-icon>
+    <mat-icon>bubble_chart</mat-icon>
+  </div>
+  <app-most-populated *ngIf="selectedChartType == chartTypes.MOST_POPULATED"></app-most-populated>
+  <app-biggest-area *ngIf="selectedChartType == chartTypes.BIGGEST_AREA"></app-biggest-area>
 </div>

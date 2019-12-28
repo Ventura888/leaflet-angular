@@ -1,5 +1,5 @@
 import { mapInitState, MapStateInterface } from './map.initState';
-import { GetAllCapitalsDataRes, MapActions, MapActionTypes, SelectMapType, SetSelectedCity } from './map.actions';
+import { GetAllCapitalsDataRes, MapActions, MapActionTypes, SelectChartType, SelectMapType, SetSelectedCity } from './map.actions';
 
 
 export function mapReducer(state: MapStateInterface = mapInitState, action: MapActions): MapStateInterface {
@@ -9,6 +9,9 @@ export function mapReducer(state: MapStateInterface = mapInitState, action: MapA
 
     case MapActionTypes.SELECT_MAP_TYPE:
       return { ...state, selectedMapType: (action as SelectMapType).payload.selectedMapType };
+
+    case MapActionTypes.SELECT_CHART_TYPE:
+      return { ...state, selectedChartType: (action as SelectChartType).payload.selectedChartType };
 
     case MapActionTypes.GET_All_CAPITALS_DATA_RES:
       return { ...state, capitals: (action as GetAllCapitalsDataRes).payload.capitals };

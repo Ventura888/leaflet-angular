@@ -30,11 +30,7 @@ export class MarkerService {
         const circle = L.circleMarker([lon, lat], {
           radius: MarkerService.ScaledRadius(c.properties.population, maxVal),
           color: 'black'
-        });
-
-        circle.on('click', (e) => {
-          circle.bindPopup(this.popupService.makeCapitalPopup(c));
-        });
+        }).bindPopup(this.popupService.makeCapitalPopup(c));
 
         circle.addTo(map);
       }

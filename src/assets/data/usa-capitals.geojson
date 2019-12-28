@@ -11,6 +11,7 @@
         ]
       },
       "properties": {
+        "area": 159.8,
         "capitalSince": 1846,
         "state": "Alabama",
         "name": "Montgomery",
@@ -27,6 +28,7 @@
         ]
       },
       "properties": {
+        "area": 2716.7,
         "capitalSince": 1906,
         "state": "Alaska",
         "name": "Juneau",
@@ -43,6 +45,7 @@
         ]
       },
       "properties": {
+        "area": 517.6,
         "capitalSince": 1889,
         "state": "Arizona",
         "name": "Phoenix",
@@ -59,6 +62,7 @@
         ]
       },
       "properties": {
+        "area": 116.2,
         "capitalSince": 1821,
         "state": "Arkansas",
         "name": "Little Rock",
@@ -75,6 +79,7 @@
         ]
       },
       "properties": {
+        "area": 97.9,
         "capitalSince": 1854,
         "state": "California",
         "name": "Sacramento",
@@ -91,6 +96,7 @@
         ]
       },
       "properties": {
+        "area": 153.3,
         "capitalSince": 1867,
         "state": "Colorado",
         "name": "Denver",
@@ -107,6 +113,7 @@
         ]
       },
       "properties": {
+        "area": 17.3,
         "capitalSince": 1875,
         "state": "Connecticut",
         "name": "Hartford",
@@ -123,6 +130,7 @@
         ]
       },
       "properties": {
+        "area": 22.4,
         "capitalSince": 1777,
         "state": "Delaware",
         "name": "Dover",
@@ -139,6 +147,7 @@
         ]
       },
       "properties": {
+        "area": 95.7,
         "capitalSince": 1824,
         "state": "Florida",
         "name": "Tallahassee",
@@ -155,6 +164,7 @@
         ]
       },
       "properties": {
+        "area": 133.5,
         "capitalSince": 1868,
         "state": "Georgia",
         "name": "Atlanta",
@@ -171,6 +181,7 @@
         ]
       },
       "properties": {
+        "area": 68.4,
         "capitalSince": 1845,
         "state": "Hawaii",
         "name": "Honolulu",
@@ -187,6 +198,7 @@
         ]
       },
       "properties": {
+        "area": 63.8,
         "capitalSince": 1865,
         "state": "Idaho",
         "name": "Boise",
@@ -203,6 +215,7 @@
         ]
       },
       "properties": {
+        "area": 54.0,
         "capitalSince": 1837,
         "state": "Illinois",
         "name": "Springfield",
@@ -219,6 +232,7 @@
         ]
       },
       "properties": {
+        "area": 361.5,
         "capitalSince": 1825,
         "state": "Indiana",
         "name": "Indianapolis",
@@ -235,6 +249,7 @@
         ]
       },
       "properties": {
+        "area": 75.8,
         "capitalSince": 1857,
         "state": "Iowa",
         "name": "Des Moines",
@@ -251,6 +266,7 @@
         ]
       },
       "properties": {
+        "area": 56.0,
         "capitalSince": 1856,
         "state": "Kansas",
         "name": "Topeka",
@@ -267,6 +283,7 @@
         ]
       },
       "properties": {
+        "area": 14.7,
         "capitalSince": 1792,
         "state": "Kentucky",
         "name": "Frankfort",
@@ -283,6 +300,7 @@
         ]
       },
       "properties": {
+        "area": 76.8,
         "capitalSince": 1880,
         "state": "Louisiana",
         "name": "Baton Rouge",
@@ -299,6 +317,7 @@
         ]
       },
       "properties": {
+        "area": 55.4,
         "capitalSince": 1832,
         "state": "Maine",
         "name": "Augusta",
@@ -315,6 +334,7 @@
         ]
       },
       "properties": {
+        "area": 6.73,
         "capitalSince": 1694,
         "state": "Maryland",
         "name": "Annapolis",
@@ -331,6 +351,7 @@
         ]
       },
       "properties": {
+        "area": 89.6,
         "capitalSince": 1630,
         "state": "Massachusetts",
         "name": "Boston",
@@ -347,6 +368,7 @@
         ]
       },
       "properties": {
+        "area": 35.0,
         "capitalSince": 1847,
         "state": "Michigan",
         "name": "Lansing",
@@ -363,6 +385,7 @@
         ]
       },
       "properties": {
+        "area": 52.8,
         "capitalSince": 1849,
         "state": "Minnesota",
         "name": "Saint Paul",
@@ -379,6 +402,7 @@
         ]
       },
       "properties": {
+        "area": 104.9,
         "capitalSince": 1821,
         "state": "Mississippi",
         "name": "Jackson",
@@ -395,6 +419,7 @@
         ]
       },
       "properties": {
+        "area": 27.3,
         "capitalSince": 1826,
         "state": "Missouri",
         "name": "Jefferson City",
@@ -411,6 +436,7 @@
         ]
       },
       "properties": {
+        "area": 14.0,
         "capitalSince": 1875,
         "state": "Montana",
         "name": "Helana",
@@ -427,6 +453,7 @@
         ]
       },
       "properties": {
+        "area": 74.6,
         "capitalSince": 1867,
         "state": "Nebraska",
         "name": "Lincoln",
@@ -443,6 +470,7 @@
         ]
       },
       "properties": {
+        "area": 143.4,
         "capitalSince": 1861,
         "state": "Nevada",
         "name": "Carson City",
@@ -459,6 +487,7 @@
         ]
       },
       "properties": {
+        "area": 64.3,
         "capitalSince": 1808,
         "state": "New Hampshire",
         "name": "Concord",
@@ -475,6 +504,7 @@
         ]
       },
       "properties": {
+        "area": 7.66,
         "capitalSince": 1784,
         "state": "New Jersey",
         "name": "Trenton",
@@ -491,6 +521,7 @@
         ]
       },
       "properties": {
+        "area": 37.3,
         "capitalSince": 1610,
         "state": "New Mexico",
         "name": "Santa Fe",
@@ -507,6 +538,7 @@
         ]
       },
       "properties": {
+        "area": 21.4,
         "capitalSince": 1797,
         "state": "New York",
         "name": "Albany",
@@ -523,6 +555,7 @@
         ]
       },
       "properties": {
+        "area": 114.6,
         "capitalSince": 1792,
         "state": "North Carolina",
         "name": "Raleigh",
@@ -539,6 +572,7 @@
         ]
       },
       "properties": {
+        "area": 26.9,
         "capitalSince": 1883,
         "state": "North Dakota",
         "name": "Bismarck",
@@ -555,6 +589,7 @@
         ]
       },
       "properties": {
+        "area": 210.3,
         "capitalSince": 1816,
         "state": "Ohio",
         "name": "Columbus",
@@ -571,6 +606,7 @@
         ]
       },
       "properties": {
+        "area": 620.3,
         "capitalSince": 1910,
         "state": "Oklahoma",
         "name": "Oklahoma City",
@@ -587,6 +623,7 @@
         ]
       },
       "properties": {
+        "area": 45.7,
         "capitalSince": 1855,
         "state": "Oregon",
         "name": "Salem",
@@ -603,6 +640,7 @@
         ]
       },
       "properties": {
+        "area": 8.11,
         "capitalSince": 1812,
         "state": "Pennsylvania",
         "name": "Harrisburg",
@@ -619,6 +657,7 @@
         ]
       },
       "properties": {
+        "area": 18.5,
         "capitalSince": 1900,
         "state": "Rhode Island",
         "name": "Providence",
@@ -635,6 +674,7 @@
         ]
       },
       "properties": {
+        "area": 125.2,
         "capitalSince": 1786,
         "state": "South Carolina",
         "name": "Columbia",
@@ -651,6 +691,7 @@
         ]
       },
       "properties": {
+        "area": 13.0,
         "capitalSince": 1889,
         "state": "South Dakota",
         "name": "Pierre",
@@ -667,6 +708,7 @@
         ]
       },
       "properties": {
+        "area": 525.9,
         "capitalSince": 1826,
         "state": "Tennessee",
         "name": "Nashville",
@@ -683,6 +725,7 @@
         ]
       },
       "properties": {
+        "area": 305.1,
         "capitalSince": 1839,
         "state": "Texas",
         "name": "Austin",
@@ -699,6 +742,7 @@
         ]
       },
       "properties": {
+        "area": 109.1,
         "capitalSince": 1858,
         "state": "Utah",
         "name": "Salt Lake City",
@@ -715,6 +759,7 @@
         ]
       },
       "properties": {
+        "area": 10.2,
         "capitalSince": 1805,
         "state": "Vermont",
         "name": "Montpelier",
@@ -731,6 +776,7 @@
         ]
       },
       "properties": {
+        "area": 60.1,
         "capitalSince": 1780,
         "state": "Virginia",
         "name": "Richmond",
@@ -747,6 +793,7 @@
         ]
       },
       "properties": {
+        "area": 16.7,
         "capitalSince": 1853,
         "state": "Washington",
         "name": "Olympia",
@@ -763,6 +810,7 @@
         ]
       },
       "properties": {
+        "area": 31.6,
         "capitalSince": 1885,
         "state": "West Virginia",
         "name": "Charleston",
@@ -779,6 +827,7 @@
         ]
       },
       "properties": {
+        "area": 68.7,
         "capitalSince": 1838,
         "state": "Wisconsin",
         "name": "Madison",
@@ -795,6 +844,7 @@
         ]
       },
       "properties": {
+        "area": 21.1,
         "capitalSince": 1869,
         "state": "Wyoming",
         "name": "Cheyenne",
