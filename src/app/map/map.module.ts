@@ -12,11 +12,14 @@ import { SideNavComponent } from './components/side-nav/side-nav.component';
 import { MatButtonModule, MatIconModule, MatMenuModule, MatSidenavModule, MatTooltipModule } from '@angular/material';
 import { AgGridModule } from 'ag-grid-angular';
 import { ButtonRendererComponent } from './components/data-table/button-renderer/button-renderer.component';
+import { ChartsModule } from 'ng2-charts';
+import { MostPopulatedComponent } from './components/graph/charts/most-populated/most-populated.component';
+import { BiggestAreaComponent } from './components/graph/charts/biggest-area/biggest-area.component';
 
 
 
 @NgModule({
-  declarations: [MapComponent, GraphComponent, DataTableComponent, SideNavComponent, ButtonRendererComponent],
+  declarations: [MapComponent, GraphComponent, DataTableComponent, SideNavComponent, ButtonRendererComponent, MostPopulatedComponent, BiggestAreaComponent],
   imports: [
     CommonModule,
     HttpClientModule,
@@ -27,7 +30,8 @@ import { ButtonRendererComponent } from './components/data-table/button-renderer
     MatButtonModule,
     MatIconModule,
     MatTooltipModule,
-    MatMenuModule
+    MatMenuModule,
+    ChartsModule
   ],
   exports: [MapComponent]
 })

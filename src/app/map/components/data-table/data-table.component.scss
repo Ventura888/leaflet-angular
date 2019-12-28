@@ -28,3 +28,17 @@
   border-color:transparent !important;
   outline: none;
 }
+
+
+::ng-deep.ag-theme-balham-dark .ag-header {
+  background-color: #161616;
+}
+
+::ng-deep.ag-theme-balham-dark .ag-row {
+  background-color: #222222;
+  transition: 0.2s all;
+}
+
+::ng-deep.ag-theme-balham-dark .ag-row:hover {
+  background-color: #454545;
+}

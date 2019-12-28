@@ -34,11 +34,12 @@ export class DataTableComponent implements OnInit, OnDestroy {
   }
 
   columnDefs = [
-    { headerName: 'Name', field: 'properties.name', sortable: true, filter: true, flex: 1, lockVisible: true },
-    { headerName: 'State', field: 'properties.state', sortable: true, filter: true, flex: 1, lockVisible: true },
+    { headerName: 'Name', field: 'properties.name', sort: 'asc', sortable: true, filter: true, flex: 1, lockVisible: true },
+    { headerName: 'State', field: 'properties.state', sortable: true, filter: true, flex: 1, lockVisible: true},
     { headerName: 'Population', field: 'properties.population', sortable: true, filter: true, flex: 1, lockVisible: true },
     { headerName: 'Capital Since', field: 'properties.capitalSince', sortable: true, filter: true, flex: 1, lockVisible: true },
     { headerName: 'Coordinates', field: 'geometry.coordinates', sortable: true, filter: true, flex: 1, lockVisible: true },
+    { headerName: 'Area (mi²)', field: 'properties.area', sortable: true, filter: true, flex: 1, lockVisible: true },
     {
       headerName: 'Actions',
       flex: 1,

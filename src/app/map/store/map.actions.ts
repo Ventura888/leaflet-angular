@@ -4,14 +4,16 @@ export enum MapActionTypes {
   GET_All_CAPITALS_DATA_REQ = 'GET_All_CAPITALS_DATA_REQ',
   GET_All_CAPITALS_DATA_RES = 'GET_All_CAPITALS_DATA_RES',
   SET_SELECTED_CITY = 'SET_SELECTED_CITY',
-  SELECT_MAP_TYPE = 'SELECT_MAP_TYPE'
+  SELECT_MAP_TYPE = 'SELECT_MAP_TYPE',
+  SELECT_CHART_TYPE = 'SELECT_CHART_TYPE'
 }
 
 export type MapActions =
   GetAllCapitalsDataReq |
   GetAllCapitalsDataRes |
   SetSelectedCity |
-  SelectMapType
+  SelectMapType |
+  SelectChartType
 
 
 
@@ -51,4 +53,15 @@ export class SelectMapType implements Action {
   readonly type = MapActionTypes.SELECT_MAP_TYPE;
 
   constructor(public payload: SelectMapTypePayload) {}
+}
+
+
+export interface SelectChartTypePayload {
+  selectedChartType: any;
+}
+
+export class SelectChartType implements Action {
+  readonly type = MapActionTypes.SELECT_CHART_TYPE;
+
+  constructor(public payload: SelectChartTypePayload) {}
 }

@@ -56,7 +56,7 @@ export class MapComponent implements AfterViewInit, OnInit, OnDestroy {
         opacity: 0.5,
         color: 'rgba(0,0,0,0.25)',
         fillOpacity: 0.8,
-        fillColor: 'rgba(255,255,255,0.26)'
+        fillColor: 'rgba(255,255,255,0.15)'
       }),
       onEachFeature: (feature, layer) => (
         layer.on({
@@ -88,7 +88,7 @@ export class MapComponent implements AfterViewInit, OnInit, OnDestroy {
       opacity: 0.5,
       color: 'rgba(0,0,0,0.25)',
       fillOpacity: 0.8,
-      fillColor: 'rgba(255,255,255,0.26)'
+      fillColor: 'rgba(255,255,255,0.15)'
     });
   }
 

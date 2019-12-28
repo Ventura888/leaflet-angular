@@ -1,0 +1,23 @@
+.charts-header {
+  line-height: 50px;
+  height: 50px;
+  border-bottom: 1px solid #424242;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #161616;
+}
+
+mat-icon {
+  height: 50px;
+  line-height: 50px;
+  cursor: pointer;
+  width: 33%;
+  box-shadow: -1px 0px 0px 0px #424242, 1px 0px 0px 0px #424242;
+  transition: 0.2s all;
+}
+
+mat-icon:hover {
+  color: white;
+  background-color: #454545;
+}
