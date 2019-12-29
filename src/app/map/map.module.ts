@@ -15,11 +15,12 @@ import { ButtonRendererComponent } from './components/data-table/button-renderer
 import { ChartsModule } from 'ng2-charts';
 import { MostPopulatedComponent } from './components/graph/charts/most-populated/most-populated.component';
 import { BiggestAreaComponent } from './components/graph/charts/biggest-area/biggest-area.component';
+import { CapitalSinceComponent } from './components/graph/charts/capital-since/capital-since.component';
 
 
 
 @NgModule({
-  declarations: [MapComponent, GraphComponent, DataTableComponent, SideNavComponent, ButtonRendererComponent, MostPopulatedComponent, BiggestAreaComponent],
+  declarations: [MapComponent, GraphComponent, DataTableComponent, SideNavComponent, ButtonRendererComponent, MostPopulatedComponent, BiggestAreaComponent, CapitalSinceComponent],
   imports: [
     CommonModule,
     HttpClientModule,

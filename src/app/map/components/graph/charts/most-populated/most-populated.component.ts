@@ -28,7 +28,7 @@ export class MostPopulatedComponent implements OnInit, AfterViewInit, OnDestroy 
   );
 
   public barChartOptions: ChartOptions = {
-    responsive: true,
+    responsive: false,
     title: {
       display: true,
       text: 'Most Populated Capitals',

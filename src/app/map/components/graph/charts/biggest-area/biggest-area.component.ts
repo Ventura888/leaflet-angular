@@ -28,7 +28,7 @@ export class BiggestAreaComponent implements OnInit, AfterViewInit, OnDestroy {
   );
 
   public pieChartOptions: ChartOptions = {
-    responsive: true,
+    responsive: false,
     title: {
       display: true,
       text: 'Biggest Area Capitals (mi²)',
@@ -41,6 +41,19 @@ export class BiggestAreaComponent implements OnInit, AfterViewInit, OnDestroy {
       },
     }
   };
+
+  pieChartColors = [
+    {
+      backgroundColor: [
+        'rgba(225,10,24,0.5)',
+        'rgba(70,156,225,0.5)',
+        'rgba(221,225,88,0.5)',
+        'rgba(225,65,187,0.5)',
+        'rgba(60,225,76,0.5)'
+      ]
+    }
+  ];
+
   public pieChartLabels: Label[] = [[''], [''], [''], [''], ['']];
   public pieChartData: Array<any> = [
     {data: [0], borderColor: ['#424242', '#424242', '#424242', '#424242', '#424242'], borderWidth: [1, 1, 1, 1, 1]}
