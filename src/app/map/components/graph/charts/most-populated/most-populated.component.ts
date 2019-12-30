@@ -36,7 +36,6 @@ export class MostPopulatedComponent implements OnInit, AfterViewInit, OnDestroy 
     },
     scales: {
       xAxes: [{
-        stacked: true,
         ticks: {
           fontColor: '#aaaaaa',  // x axe labels (can be hexadecimal too)
         },
@@ -45,7 +44,6 @@ export class MostPopulatedComponent implements OnInit, AfterViewInit, OnDestroy 
         }
       }],
       yAxes: [{
-        stacked: true,
         ticks: {
           fontColor: '#aaaaaa',  // y axes numbers color (can be hexadecimal too)
           min: 0,
@@ -63,9 +61,9 @@ export class MostPopulatedComponent implements OnInit, AfterViewInit, OnDestroy 
       }]
     },
   };
-  public barChartLabels: Label[];
+  public barChartLabels: Label[] = ['Top 5 Populated Capitals'];
   public barChartType: ChartType = 'bar';
-  public barChartLegend = false;
+  public barChartLegend = true;
   public barChartPlugins = [];
 
   public barChartData: ChartDataSets[] = [
@@ -74,22 +72,46 @@ export class MostPopulatedComponent implements OnInit, AfterViewInit, OnDestroy 
 
   public chartColors: Array<any> = [
     {
-      backgroundColor: 'rgba(70,156,225,0.5)',
-      borderColor: 'rgba(70,156,225,0.5)',
-      pointBackgroundColor: 'rgba(70,156,225,0.5)',
-      pointBorderColor: '#fff',
-      pointHoverBackgroundColor: '#fff',
-      pointHoverBorderColor: 'rgba(70,156,225,0.5)'
+      backgroundColor: 'rgba(54, 162, 235, 0.5)',
+      borderColor: 'rgba(54, 162, 235, 1)',
+      pointBackgroundColor: 'rgba(54, 162, 235, 0.5)',
+      pointBorderColor: '#000',
+      pointHoverBackgroundColor: '#000',
+      pointHoverBorderColor: 'rgba(54, 162, 235, 0.5)'
     },
     {
-      backgroundColor: 'rgba(225,10,24,0.5)',
-      borderColor: 'rgba(225,10,24,0.5)',
-      pointBackgroundColor: 'rgba(225,10,24,0.5)',
-      pointBorderColor: '#fff',
-      pointHoverBackgroundColor: '#fff',
-      pointHoverBorderColor: 'rgba(225,10,24,0.5)'
+      backgroundColor: 'rgba(75, 192, 192, 0.5)',
+      borderColor: 'rgba(75, 192, 192, 1)',
+      pointBackgroundColor: 'rgba(75, 192, 192, 0.5)',
+      pointBorderColor: '#000',
+      pointHoverBackgroundColor: '#000',
+      pointHoverBorderColor: 'rgba(75, 192, 192, 0.5)'
+    },
+    {
+      backgroundColor: 'rgba(255, 205, 86, 0.5)',
+      borderColor: 'rgba(255, 205, 86, 1)',
+      pointBackgroundColor: 'rgba(255, 205, 86, 0.5)',
+      pointBorderColor: '#000',
+      pointHoverBackgroundColor: '#000',
+      pointHoverBorderColor: 'rgba(255, 205, 86, 0.5)'
+    },
+    {
+      backgroundColor: 'rgba(255, 159, 64, 0.5)',
+      borderColor: 'rgba(255, 159, 64, 1)',
+      pointBackgroundColor: 'rgba(255, 159, 64, 0.5)',
+      pointBorderColor: '#000',
+      pointHoverBackgroundColor: '#000',
+      pointHoverBorderColor: 'rgba(255, 159, 64, 0.5)'
+    },
+    {
+      backgroundColor: 'rgba(201, 203, 207, 0.5)',
+      borderColor: 'rgba(201, 203, 207, 1)',
+      pointBackgroundColor: 'rgba(201, 203, 207, 0.5)',
+      pointBorderColor: '#000',
+      pointHoverBackgroundColor: '#000',
+      pointHoverBorderColor: 'rgba(201, 203, 207, 0.5)'
     }
-    ];
+  ];
 
   constructor(private store: Store<any>) { }
 
@@ -112,24 +134,14 @@ export class MostPopulatedComponent implements OnInit, AfterViewInit, OnDestroy 
   }
 
   initChart() {
-    this.barChartLabels = [
-      `${this.topFiveCapitals[0].properties.name}, ${this.topFiveCapitals[0].properties.state}`,
-      `${this.topFiveCapitals[1].properties.name}, ${this.topFiveCapitals[1].properties.state}`,
-      `${this.topFiveCapitals[2].properties.name}, ${this.topFiveCapitals[2].properties.state}`,
-      `${this.topFiveCapitals[3].properties.name}, ${this.topFiveCapitals[3].properties.state}`,
-      `${this.topFiveCapitals[4].properties.name}, ${this.topFiveCapitals[4].properties.state}`
-    ];
-    this.barChartData = [
-      {
-        data: [
-          this.topFiveCapitals[0].properties.population,
-          this.topFiveCapitals[1].properties.population,
-          this.topFiveCapitals[2].properties.population,
-          this.topFiveCapitals[3].properties.population,
-          this.topFiveCapitals[4].properties.population,
-        ]
-      }
-    ];
+    const barChartClone = [];
+    for (let i = 0 ; i < 5; i++) {
+      barChartClone.push({
+        data: [this.topFiveCapitals[i].properties.population],
+        label: `${this.topFiveCapitals[i].properties.name}`
+      })
+    }
+    this.barChartData = barChartClone;
   }
 
   getTopFive(arr: Array<any>) {
