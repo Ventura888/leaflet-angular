@@ -37,26 +37,26 @@ export class MostPopulatedComponent implements OnInit, AfterViewInit, OnDestroy 
     scales: {
       xAxes: [{
         ticks: {
-          fontColor: '#aaaaaa',  // x axe labels (can be hexadecimal too)
+          fontColor: '#aaaaaa',
         },
         gridLines: {
-          color: '#454545'  // grid line color (can be removed or changed)
+          color: '#454545'
         }
       }],
       yAxes: [{
         ticks: {
-          fontColor: '#aaaaaa',  // y axes numbers color (can be hexadecimal too)
+          fontColor: '#aaaaaa',
           min: 0,
           beginAtZero: true,
 
         },
         gridLines: {
-          color: '#454545'  // grid line color (can be removed or changed)
+          color: '#454545'
         },
         scaleLabel: {
           display: true,
           labelString: 'Population',
-          fontColor: '#aaaaaa',  // y axe label color (can be hexadecimal too)
+          fontColor: '#aaaaaa',
         }
       }]
     },

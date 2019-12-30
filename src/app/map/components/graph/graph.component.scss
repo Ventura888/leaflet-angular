@@ -1,4 +1,30 @@
+.charts-wrapper {
+  width: 100%;
+  height: 410px;
+  text-align: center;
+  color: #aaaaaa;
+  user-select: none;
+  position: relative;
+}
+
+.charts-wrapper-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .05;
+  z-index: 0;
+  background: url(/assets/img/us_map.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .charts-header {
+  position: relative;
+  width: 100%;
+  z-index: 2;
   line-height: 50px;
   height: 50px;
   border-bottom: 1px solid #424242;
@@ -20,4 +46,9 @@ mat-icon {
 mat-icon:hover {
   color: white;
   background-color: #454545;
+}
+
+.chart-component {
+  position: relative;
+  z-index: 3;
 }
