@@ -122,7 +122,7 @@ export class CapitalSinceComponent implements OnInit, AfterViewInit, OnDestroy {
           ],
           label: `${this.topFiveCapitals[0].properties.name}`,
           borderColor: ['#424242', '#424242', '#424242', '#424242', '#424242'],
-          backgroundColor: ['red']
+          backgroundColor: ['rgba(54, 162, 235, 0.5)']
         },
         {
           data: [
@@ -130,7 +130,7 @@ export class CapitalSinceComponent implements OnInit, AfterViewInit, OnDestroy {
           ],
           label: `${this.topFiveCapitals[1].properties.name}`,
           borderColor: ['#424242', '#424242', '#424242', '#424242', '#424242'],
-          backgroundColor: ['blue']
+          backgroundColor: ['rgba(75, 192, 192, 0.5)']
         },
         {
           data: [
@@ -138,7 +138,7 @@ export class CapitalSinceComponent implements OnInit, AfterViewInit, OnDestroy {
           ],
           label: `${this.topFiveCapitals[2].properties.name}`,
           borderColor: ['#424242', '#424242', '#424242', '#424242', '#424242'],
-          backgroundColor: ['green']
+          backgroundColor: ['rgba(255, 205, 86, 0.5)']
         },
         {
           data: [
@@ -146,7 +146,7 @@ export class CapitalSinceComponent implements OnInit, AfterViewInit, OnDestroy {
           ],
           label: `${this.topFiveCapitals[3].properties.name}`,
           borderColor: ['#424242', '#424242', '#424242', '#424242', '#424242'],
-          backgroundColor: ['yellow']
+          backgroundColor: ['rgba(255, 159, 64, 0.5)']
         },
         {
           data: [
@@ -154,7 +154,7 @@ export class CapitalSinceComponent implements OnInit, AfterViewInit, OnDestroy {
           ],
           label: `${this.topFiveCapitals[4].properties.name}`,
           borderColor: ['#424242', '#424242', '#424242', '#424242', '#424242'],
-          backgroundColor: ['brown']
+          backgroundColor: ['rgba(201, 203, 207, 0.5)']
         },
       ];
   }
