@@ -1,10 +1,9 @@
-<div style="width: 100%; height: 410px; text-align: center; color: #aaaaaa; user-select: none;">
+<div class="charts-wrapper">
+  <div class="charts-wrapper-background"></div>
   <div class="charts-header">
-    <mat-icon [style.color]="selectedChartType === chartTypes.MOST_POPULATED ? '#185e8f': ''" (click)="setChartType(chartTypes.MOST_POPULATED)" matTooltip="Most Populated" matTooltipPosition="above">insert_chart</mat-icon>
-    <mat-icon [style.color]="selectedChartType === chartTypes.BIGGEST_AREA ? '#185e8f': ''" (click)="setChartType(chartTypes.BIGGEST_AREA)" matTooltip="Biggest Area" matTooltipPosition="above">pie_chart</mat-icon>
-    <mat-icon [style.color]="selectedChartType === chartTypes.CAPITAL_SINCE ? '#185e8f': ''" (click)="setChartType(chartTypes.CAPITAL_SINCE)" matTooltip="Capital Since" matTooltipPosition="above">bubble_chart</mat-icon>
+    <mat-icon *ngFor="let chartOption of chartOptions" [style.color]="selectedChartType === chartOption.name ? '#185e8f': ''" (click)="setChartType(chartOption.name)" matTooltip="{{chartOption.name}}" matTooltipPosition="above">{{chartOption.icon}}</mat-icon>
   </div>
-  <app-most-populated *ngIf="selectedChartType == chartTypes.MOST_POPULATED"></app-most-populated>
-  <app-biggest-area *ngIf="selectedChartType == chartTypes.BIGGEST_AREA"></app-biggest-area>
-  <app-capital-since *ngIf="selectedChartType == chartTypes.CAPITAL_SINCE"></app-capital-since>
+  <app-most-populated class="chart-component" *ngIf="selectedChartType == chartTypes.MOST_POPULATED"></app-most-populated>
+  <app-biggest-area class="chart-component" *ngIf="selectedChartType == chartTypes.BIGGEST_AREA"></app-biggest-area>
+  <app-capital-since class="chart-component" *ngIf="selectedChartType == chartTypes.CAPITAL_SINCE"></app-capital-since>
 </div>

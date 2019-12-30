@@ -54,7 +54,7 @@ export class CapitalSinceComponent implements OnInit, AfterViewInit, OnDestroy {
         { x: 1910, y: 150, r: 23 },
         { x: 2000, y: 100, r: 8 },
       ],
-      label: 'Series A',
+      label: '',
     },
   ];
 
@@ -89,7 +89,7 @@ export class CapitalSinceComponent implements OnInit, AfterViewInit, OnDestroy {
             fontColor: '#aaaaaa',
           },
           gridLines: {
-            color: '#454545'  // grid line color (can be removed or changed)
+            color: '#454545'
           },
           scaleLabel: {
             display: true,
@@ -104,7 +104,7 @@ export class CapitalSinceComponent implements OnInit, AfterViewInit, OnDestroy {
             fontColor: '#aaaaaa',
           },
           gridLines: {
-            color: '#454545'  // grid line color (can be removed or changed)
+            color: '#454545'
           },
           scaleLabel: {
             display: true,

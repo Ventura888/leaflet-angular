@@ -13,6 +13,7 @@ export class PopUpService {
       `<div>State: ${ data.properties.state }</div>` +
       `<div>Population: ${ data.properties.population }</div>` +
       `<div>Capital Since: ${ data.properties.capitalSince }</div>` +
+      `<div>Area: ${ data.properties.area }</div>` +
       `<div>Coordinates: ${ data.geometry.coordinates }</div>`;
   }
 }

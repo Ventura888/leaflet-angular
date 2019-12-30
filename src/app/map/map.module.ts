@@ -8,7 +8,6 @@ import { StoreModule } from '@ngrx/store';
 import { mapReducer } from './store/map.reducer';
 import { EffectsModule } from '@ngrx/effects';
 import { MapEffects } from './store/map.effects';
-import { SideNavComponent } from './components/side-nav/side-nav.component';
 import { MatButtonModule, MatIconModule, MatMenuModule, MatSidenavModule, MatTooltipModule } from '@angular/material';
 import { AgGridModule } from 'ag-grid-angular';
 import { ButtonRendererComponent } from './components/data-table/button-renderer/button-renderer.component';
@@ -20,7 +19,7 @@ import { CapitalSinceComponent } from './components/graph/charts/capital-since/c
 
 
 @NgModule({
-  declarations: [MapComponent, GraphComponent, DataTableComponent, SideNavComponent, ButtonRendererComponent, MostPopulatedComponent, BiggestAreaComponent, CapitalSinceComponent],
+  declarations: [MapComponent, GraphComponent, DataTableComponent, ButtonRendererComponent, MostPopulatedComponent, BiggestAreaComponent, CapitalSinceComponent],
   imports: [
     CommonModule,
     HttpClientModule,

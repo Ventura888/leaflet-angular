@@ -32,6 +32,14 @@ export class MarkerService {
           color: 'black'
         }).bindPopup(this.popupService.makeCapitalPopup(c));
 
+        circle.on('mouseover', (e) => {
+          circle.setStyle({color: '#185e8f'});
+        });
+
+        circle.on('mouseout', (e) => {
+          circle.setStyle({color: 'black'});
+        });
+
         circle.addTo(map);
       }
     });
