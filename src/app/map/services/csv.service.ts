@@ -9,14 +9,14 @@ export class CsvService {
 
   exportToCsv(data) {
     const fileName = 'USA-Capitals.csv';
-    const columnNames = ['Name', 'State', 'Population', 'Capital Since', 'Coordinates'];
+    const columnNames = ['Name', 'State', 'Population', 'Capital Since', 'Coordinates', 'Area (mi²)'];
     const header = columnNames.join(',');
 
     let csv = header;
     csv += '\r\n';
 
     data.map(capital => {
-      csv += [capital.properties.name, capital.properties.state, capital.properties.population, capital.properties.capitalSince, capital.geometry.coordinates.join('; ')].join(',');
+      csv += [capital.properties.name, capital.properties.state, capital.properties.population, capital.properties.capitalSince, capital.geometry.coordinates.join('; '), capital.properties.area].join(',');
       csv += '\r\n';
     });
 
