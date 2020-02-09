@@ -16,8 +16,8 @@ import { mapTypes } from '../../models/mapTypes';
 export class MapComponent implements AfterViewInit, OnInit, OnDestroy {
 
   subscriptions = [];
-  private map;
-  private states;
+  map;
+  states;
 
   mapTypes = mapTypes;
 
